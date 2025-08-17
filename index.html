@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study Plan Tracker 2025-2026</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="header-content">
+                <h1>Study Plan Tracker</h1>
+                <p class="study-period">August 2025 → July 2026</p>
+                <div class="overall-progress">
+                    <div class="progress-info">
+                        <span class="progress-label">Overall Progress</span>
+                        <span class="progress-tooltip" title="Progress resets on page refresh - no data is saved permanently">ⓘ</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" id="overall-progress-fill"></div>
+                    </div>
+                    <span class="progress-text" id="overall-progress-text">0%</span>
+                </div>
+                <button class="btn btn--secondary" id="reset-all-btn">Reset All Progress</button>
+            </div>
+        </header>
+
+        <main class="main-content">
+            <div class="accordion" id="months-accordion"></div>
+        </main>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
